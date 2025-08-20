@@ -40,7 +40,7 @@ namespace WPFCurrencyConverter
         private async void OnConvert(object sender, RoutedEventArgs e)
         {
             WindowDataContext ctx = (WindowDataContext)DataContext;
-            MessageBox.Show($"{ctx.AmountToConvert} {ctx.Currencies[ctx.IdFromCurrency]} -> {ctx.Currencies[ctx.IdToCurrency]}");
+            //MessageBox.Show($"{ctx.AmountToConvert} {ctx.Currencies[ctx.IdFromCurrency]} -> {ctx.Currencies[ctx.IdToCurrency]}");
 
             var converter = new ServiceConverter(ctx.AmountToConvert, ctx.Currencies[ctx.IdFromCurrency], ctx.Currencies[ctx.IdToCurrency]);
             BtnConvert.IsEnabled = false;
