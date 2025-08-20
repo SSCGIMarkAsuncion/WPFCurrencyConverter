@@ -19,25 +19,36 @@ namespace WPFCurrencyConverter.Utils
     {
 
         public static readonly string[] CURRENCIES = {
-            "USD",
-            "EUR",
-            "JPY",
-            "GBP",
-            "AUD",
-            "CAD",
-            "CHF",
-            "CNY",
-            "HKD",
-            "NZD",
-            "SEK",
-            "KRW",
-            "SGD",
-            "NOK",
-            "MXN",
-            "INR",
-            "RUB",
-            "ZAR",
-            "BRL"
+            "USD", // US Dollar
+            "EUR", // Euro
+            "JPY", // Japanese Yen
+            "GBP", // British Pound
+            "AUD", // Australian Dollar
+            "CAD", // Canadian Dollar
+            "CHF", // Swiss Franc
+            "CNY", // Chinese Yuan
+            "HKD", // Hong Kong Dollar
+            "NZD", // New Zealand Dollar
+            "SEK", // Swedish Krona
+            "KRW", // South Korean Won
+            "SGD", // Singapore Dollar
+            "NOK", // Norwegian Krone
+            "MXN", // Mexican Peso
+            "INR", // Indian Rupee
+            "RUB", // Russian Ruble
+            "ZAR", // South African Rand
+            "BRL", // Brazilian Real,
+            "PHP", // Philippine Peso
+            "MYR", // Malaysian Ringgit
+            "IDR", // Indonesian Rupiah
+            "THB", // Thai Baht
+            "VND", // Vietnamese Dong
+            "KHR", // Cambodian Riel
+            "MMK", // Myanmar Kyat
+            "LAK", // Lao Kip
+            "BND", // Brunei Dollar
+            "MOP", // Macanese Pataca (near SEA, used in Macau)
+            "TWD"  // New Taiwan Dollar (East Asia, but often grouped regionally)
         };
         private double FromAmount;
         private string FromType;
