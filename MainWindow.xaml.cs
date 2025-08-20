@@ -19,7 +19,7 @@ namespace WPFCurrencyConverter
     {
         struct WindowDataContext
         {
-            public string[] Currencies { get; set; }
+            public List<string> Currencies { get; set; }
             public int IdFromCurrency { get; set; }
             public int IdToCurrency { get; set; }
             public double AmountToConvert { get; set; }
@@ -28,9 +28,11 @@ namespace WPFCurrencyConverter
         public MainWindow()
         {
             InitializeComponent();
+            var currencies = new List<string>(ServiceConverter.CURRENCIES);
+            currencies.Sort();
             DataContext = new WindowDataContext()
             {
-                Currencies = ServiceConverter.CURRENCIES,
+                Currencies = currencies,
                 IdFromCurrency = 0,
                 IdToCurrency = 1,
                 AmountToConvert = 0.0
