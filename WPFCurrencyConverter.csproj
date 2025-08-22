@@ -8,4 +8,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\icon_exchange.png" />
+    <None Remove="Assets\pen-to-square-solid-full.png" />
+    <None Remove="Assets\trash-solid-full.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\icon_exchange.png" />
+    <Resource Include="Assets\pen-to-square-solid-full.png" />
+    <Resource Include="Assets\trash-solid-full.png" />
+  </ItemGroup>
+
 </Project>
